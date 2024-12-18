@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
   <header>
     <h1>Mini Rede Social</h1>
   </header>
+
   <nav>
     <a href="#">Feed</a>
     <a href="perfil.html">Meu Perfil</a>
@@ -28,7 +29,13 @@
       <div class="post-author">@usuario2</div>
       <div class="post-content">Praticando HTML e CSS para criar uma rede social simples.</div>
     </div>
-    <button class="button" onclick="novoPost()">Criar Novo Post</button>
+
+    <!-- Formulário de novo post -->
+    <div id="new-post-form" style="display: none;">
+      <textarea id="new-post-content" placeholder="Escreva seu post aqui..." maxlength="280"></textarea>
+      <button class="button" onclick="publicarPost()">Publicar</button>
+    </div>
+    <button class="button" onclick="mostrarFormulario()">Criar Novo Post</button>
   </main>
 
   <script src="js/scripts.js"></script>
