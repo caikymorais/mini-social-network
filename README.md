@@ -21,5 +21,4 @@ Para visualizar ou trabalhar no projeto, você precisará:
    ```bash
    git clone https://github.com/seuusuario/mini-rede-social.git
 ## DESENVOLVEDORES:
-Caiky de Morais Alves 
-Marcos deu Sousa
+Caiky de Morais Alves e Marcos de Sousa
