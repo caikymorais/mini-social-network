@@ -14,49 +14,40 @@
   </header>
 
   <nav>
+    <a href="#" onclick="exibirPerfil()">Meu Perfil</a>
     <a href="#">Feed</a>
-    <a href="perfil.html">Meu Perfil</a>
     <a href="login.html">Login</a>
   </nav>
 
   <main id="feed">
     <h2>Feed de Posts</h2>
 
-    <!-- Post 1 -->
+    <!-- Lista de posts estáticos -->
     <div class="post">
       <div class="post-header">
         <span class="post-author">@usuario1</span>
         <span class="post-date">2024-12-10</span>
       </div>
-      <div class="post-content">
-        Este é o meu primeiro post na mini rede social!
-      </div>
+      <div class="post-content">Este é o meu primeiro post na mini rede social!</div>
       <button class="like-button">Curtir (5)</button>
     </div>
 
-    <!-- Post 2 -->
     <div class="post">
       <div class="post-header">
         <span class="post-author">@usuario2</span>
         <span class="post-date">2024-12-12</span>
       </div>
-      <div class="post-content">
-        Praticando HTML e CSS para criar uma rede social simples.
-      </div>
+      <div class="post-content">Praticando HTML e CSS para criar uma rede social simples.</div>
       <button class="like-button">Curtir (8)</button>
     </div>
 
-    <!-- Post 3 -->
-    <div class="post">
-      <div class="post-header">
-        <span class="post-author">@usuario3</span>
-        <span class="post-date">2024-12-15</span>
-      </div>
-      <div class="post-content">
-        Fiz alterações na interface e estou começando a aprender JavaScript!
-      </div>
-      <button class="like-button">Curtir (12)</button>
+    <!-- Formulário de criação de novo post -->
+    <div id="new-post-form" style="display: none;">
+      <textarea id="new-post-content" placeholder="Escreva seu post aqui..." maxlength="280"></textarea>
+      <button class="button" onclick="publicarPost()">Publicar</button>
     </div>
+
+    <button class="button" onclick="mostrarFormulario()">Criar Novo Post</button>
   </main>
 
   <script src="js/scripts.js"></script>
