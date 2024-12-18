@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mini Rede Social</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header>
+    <h1>Mini Rede Social</h1>
+  </header>
+  <nav>
+    <a href="#">Feed</a>
+    <a href="perfil.html">Meu Perfil</a>
+    <a href="login.html">Login</a>
+  </nav>
 
+  <main id="feed">
+    <h2>Feed de Posts</h2>
+    <div class="post">
+      <div class="post-author">@usuario1</div>
+      <div class="post-content">Este é o meu primeiro post na mini rede social!</div>
+    </div>
+    <div class="post">
+      <div class="post-author">@usuario2</div>
+      <div class="post-content">Praticando HTML e CSS para criar uma rede social simples.</div>
+    </div>
+    <button class="button" onclick="novoPost()">Criar Novo Post</button>
+  </main>
+
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
