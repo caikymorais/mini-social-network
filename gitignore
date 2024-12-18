@@ -1,0 +1,29 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de editores de texto/IDE
+.vscode/
+.idea/
+*.swp
+
+# Dependências e pacotes (em caso de uso futuro de Node.js ou ferramentas similares)
+node_modules/
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Cache do navegador (se você tiver esse tipo de configuração)
+.cache/
+
+# Build/output (se o projeto for expandido para algo maior no futuro)
+dist/
+build/
